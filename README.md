@@ -1,3 +1,3 @@
 # DSA-Lab
 DSA Lab
-###Linear Search
+### Linear Search
