@@ -85,14 +85,32 @@ void deleteFromEnd()
 			free(temp);
 			prev->next = NULL;
 	}
-void deleteAfterKey(int value, int key)
-	{
-		if(head == NULL)
-			{
-				printf("List is empty\n");
-				return;	
-			}	
-	}
+void deleteAfterKey(int key)
+{
+    if (head == NULL)
+    {
+        printf("List is empty\n");
+        return;
+    }
+    struct Node *temp = head;
+    while (temp != NULL && temp->data != key)
+        temp = temp->next;
+    if (temp == NULL)
+    {
+        printf("Key not found\n");
+        return;
+    }
+    if (temp->next == NULL)
+    {
+        printf("No node exists after key %d\n", key);
+        return;
+    }
+    struct Node *nodeToDelete = temp->next;
+    temp->next = nodeToDelete->next;
+    printf("%d deleted after key %d\n", nodeToDelete->data, key);
+    free(nodeToDelete);
+}
+
 void display()
 	{
 		if(head == NULL)
@@ -119,4 +137,5 @@ int main()
 		//deleteFromEnd();
 		display();
 		}
+
 
