@@ -36,7 +36,7 @@ void insertAtEnd(int value)
 void insertAfterKey(int value, int key)
 	{
 			struct Node * temp = head;
-			while(head != NULL && temp->data != key)
+			while(temp != NULL && temp->data != key)
 				temp = temp -> next;
 			if(temp == NULL)
 			{
@@ -119,3 +119,4 @@ int main()
 		//deleteFromEnd();
 		display();
 		}
+
