@@ -7,17 +7,17 @@ void display(int arr[], int n)
 	}
 void insertionSort(int arr[], int n)
 	{
-		int i, key, j;
+		int i, temp, j;
 		for(i = 1; i < n; i++)
 			{
-				key = arr[i];
+				temp = arr[i];
 				j = i - 1;
-				while(j >= 0 && arr[j] > key)
+				while(j >= 0 && arr[j] > temp)
 				{
 					arr[j+1] = arr[j];
 					j --;	
 				}
-			arr[j+1] = key;
+			arr[j+1] = temp;
 			}
 	}
 int main()
@@ -36,4 +36,5 @@ int main()
 	display(arr, n);
 	return 0;
 	}
+
 
