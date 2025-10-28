@@ -8,7 +8,7 @@ void display(int arr[], int n)
 void insertionSort(int arr[], int n)
 	{
 		int i, key, j;
-		for(i = 1; i <= n; i++)
+		for(i = 1; i < n; i++)
 			{
 				key = arr[i];
 				j = i - 1;
@@ -36,3 +36,4 @@ int main()
 	display(arr, n);
 	return 0;
 	}
+
