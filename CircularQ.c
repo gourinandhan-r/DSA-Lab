@@ -5,7 +5,6 @@ int queue[SIZE];
 int front = -1;
 int rear = -1;
 int n; 
-
 void enqueue(int item) 
 {
     if (rear == n - 1) 
@@ -14,7 +13,7 @@ void enqueue(int item)
     } 
     else 
     {
-        if (front == -1)  
+        if (front == -1) 
             front = 0;
         rear++;
         queue[rear] = item;
@@ -38,9 +37,10 @@ void dequeue()
     }
 }
 
-void atFront() 
+void atFront()
 {
-    if (front == -1) {
+    if (front == -1) 
+    {
         printf("Queue is empty\n");
     } 
     else 
