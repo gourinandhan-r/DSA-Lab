@@ -15,17 +15,20 @@ struct Node * createNode(int value)
 		return newNode;
 	}
 void enqueue(int value)
-	{
-		struct Node * newNode = createNode(value);
-		if(rear == NULL) //empty queue
-		{
-		front = rear = newNode;
-		//return;	
-		}
-		rear->next = newNode;
-		rear = newNode;
-		printf("%d equeued to queue\n", value);
-	}
+{
+    struct Node *newNode = createNode(value);
+    if (rear == NULL) 
+    {
+        front = rear = newNode;
+    }
+    else
+    {
+        rear->next = newNode;
+        rear = newNode;
+    }
+    printf("%d enqueued to queue\n", value);
+}
+
 void dequeue()
 	{
 		if(front == NULL)
@@ -78,3 +81,4 @@ int main()
 		display();
 		return 0;
 		}
+
