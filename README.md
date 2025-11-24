@@ -6,7 +6,7 @@
 - QueueLinkedList.c
 - StackLinkedList.c
 - T_StackLL.c
-- - WebPage.c
+- WebPage.c
 
 ### Stacks & Queues
 - CircularQueue.c
