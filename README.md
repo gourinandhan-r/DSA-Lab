@@ -5,7 +5,6 @@
 - LinkedList.c - Singly Linked list implementation in C
 - QueueLinkedList.c - Queue implementation using Singly linked list in C
 - StackLinkedList.c - Stack implementation using Singly linked list in C
-- T_StackLL.c
 - WebPage.c - Web page traversal using Doubly linked list in C
   
 ---
